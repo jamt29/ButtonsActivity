@@ -3,7 +3,8 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/manto/AndroidStudioProjects/ButtonsActivity/app/src/main/res/layout/activity_main.xml" value="0.17300724637681159" />
+        <entry key="..\:/Users/manto/AndroidStudioProjects/ButtonsActivity/app/src/main/res/drawable/toggle_sol_luna.xml" value="0.1685185185185185" />
+        <entry key="..\:/Users/manto/AndroidStudioProjects/ButtonsActivity/app/src/main/res/layout/activity_main.xml" value="0.25" />
       </map>
     </option>
   </component>

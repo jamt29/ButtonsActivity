@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:id="@+id/randomViewInMainLayout">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -15,7 +16,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="ChipGroup, Chip and Toggle Button"
+            android:text="ChipGroup, Chip "
             android:layout_gravity="center"
             android:layout_marginTop="30dp"
             android:textSize="22dp"
@@ -25,27 +26,55 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginTop="30dp">
+            android:layout_marginTop="40dp">
 
             <com.google.android.material.chip.Chip
                 android:id="@+id/chip4"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:text="Paleta de Colores #1"
+                android:onClick="chip1"/>
             <com.google.android.material.chip.Chip
                 android:id="@+id/chip5"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:text="Paleta de Colores #2"
+                android:onClick="chip2"/>
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Default"
+                android:onClick="chip3"/>
 
 
         </com.google.android.material.chip.ChipGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Toggle Button"
+            android:layout_gravity="center"
+            android:layout_marginTop="80dp"
+            android:textSize="35dp"/>
 
         <ToggleButton
             android:layout_marginTop="30dp"
             android:layout_gravity="center"
             android:id="@+id/toggleButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="ToggleButton" />
+            android:layout_width="65dp"
+            android:layout_height="50dp"
+            android:textOn="SOL"
+            android:textOff="LUNA"
+            android:onClick="onClick"
+          />
+        <ImageView
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center"
+            android:id="@+id/img"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/luna"/>
 
     </LinearLayout>
 
